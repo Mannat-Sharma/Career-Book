@@ -1,0 +1,76 @@
+.App {
+  margin: 0;
+  padding: 0;
+  background-color: #191919;
+  width: 100vw;
+  height: 100vh;
+}
+.nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.nav-link{
+  color: #ECDBBA;
+  font-size: 2rem;
+  text-decoration: none;
+  margin: 0;
+}
+ul{
+  padding: 0;
+  margin: 0;
+}
+li{
+  list-style-type: none;
+  margin: 2.5rem;
+  padding: 0.8rem;
+}
+/* .navbar.bg-light{
+  float: right;
+  margin: 2rem;
+} */
+input, button{
+  padding: 0.65rem;
+  margin: 1rem;
+  border-radius: 10rem;
+}
+.d-flex{
+  float: right;
+}
+.form-control.me-2{
+  outline: none;
+  width: 25rem;
+}
+.btn-outline-success{
+  width: 8rem;
+  background-color:#2D4263;
+  color: white;
+  outline: none;
+}
+
+.nav-bottom{
+  display: flex;
+  flex-direction: row;
+}
+.nav-explore-right{
+  padding: 2rem;
+}
+
+.trending{
+  display: flex;
+  flex-direction: row;
+}
+.trend{
+  display: flex;
+  align-items: flex-end;
+  margin: 2rem;
+  height: 12rem;
+  width: 20rem;
+  border-radius: 1rem;
+  background-color: yellow;
+  padding: 0.8rem;
+  object-fit: cover;
+  background-position: center;
+  background-size: contain;
+  /* background-image: url("https://www.onlinecoursereport.com/wp-content/uploads/2020/07/shutterstock_394793860-1536x1177.jpg"); */
+}
