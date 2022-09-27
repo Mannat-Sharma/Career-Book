@@ -4,11 +4,33 @@
   background-color: #191919;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }
-.nav{
+
+.main{
+  display: flex;
+  flex-direction: row;
+}
+
+/* .main-section{
+  max-height: 1000px;
+  max-width: 1500px;
+  overflow-y: scroll;
+} */
+/* .nav{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+} */
+.nav-vertical{
+  margin-top: 5rem;
+}
+
+.navbar-brand{
+  color: rgb(117, 117, 229);
+  font-size: 3rem;
+  font-weight: bold;
+  margin: .6rem;
 }
 .nav-link{
   color: #ECDBBA;
@@ -24,6 +46,10 @@ li{
   list-style-type: none;
   margin: 2.5rem;
   padding: 0.8rem;
+}
+
+.nav h1{
+  display: inline-block;
 }
 /* .navbar.bg-light{
   float: right;
@@ -43,7 +69,7 @@ input, button{
 }
 .btn-outline-success{
   width: 8rem;
-  background-color:#2D4263;
+  background-color:rgb(98, 98, 230);
   color: white;
   outline: none;
 }
@@ -51,9 +77,16 @@ input, button{
 .nav-bottom{
   display: flex;
   flex-direction: row;
+  margin-bottom: 0;
 }
 .nav-explore-right{
   padding: 2rem;
+  max-height: 1000px;
+ overflow-y: scroll;
+}
+
+.nav-item{
+  padding: 1.2rem;
 }
 
 .trending{
@@ -73,4 +106,187 @@ input, button{
   background-position: center;
   background-size: contain;
   /* background-image: url("https://www.onlinecoursereport.com/wp-content/uploads/2020/07/shutterstock_394793860-1536x1177.jpg"); */
+}
+
+.faqs img{
+  margin: 1rem;
+  height: 20rem;
+  width: 75rem;
+
+}
+
+.faq-header{
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding: .8rem;
+}
+
+.faq section{
+  width: 100%;
+  height: 100vh;
+  background-color: #191919;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.faq-container{
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5 rem; 
+}
+
+.accordion-item{
+  width: 90%;
+  background-color: #232323;
+  border-radius: .4rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  box-shadow: .5rem 2px .5rem rgba(0,0,0,.1);
+}
+
+.accordion-link{
+  font-size: 1.6rem;
+  color: rgba(255,255,255,.8);
+  text-decoration: none;
+  background-color: #232323;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.accordion-link i{
+  color: #e7d5ff;
+  padding: .5rem;
+
+}
+
+.accordion-link .ion-md-remove{
+  display: none;
+}
+
+.answer{
+  overflow: hidden;
+  max-height: 0;
+  position: relative;
+  background-color: #1e1e1e;
+  transition: max-height 650ms;
+}
+
+.answer::before{
+  content: "";
+  position: absolute;
+  width: .6rem;
+  height: 90%;
+  background-color: rgb(215, 215, 136);
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.answer p{
+  color: rgba(255, 255, 255, .6);
+  font-size: 1.4rem;
+  padding: 2rem;
+}
+
+.accordion-item:target .answer{
+  max-height: 20rem;
+
+}
+
+.accordion-item:target .accordion-link .ion-md-add{
+  display: none;
+}
+
+.accordion-item:target .accordion-link .ion-md-remove{
+  display: block;
+}
+
+.home{
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-explore-right{
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  margin-bottom: 1rem;
+}
+.home img{
+  height: 30rem;
+  width: 50rem;
+}
+
+.home-content{
+  color: white;
+  width: 25rem;
+  margin-bottom: 12rem;
+}
+
+.home-content h1{
+  font-size: 3rem;
+}
+
+.home-content h3{
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+.home button{
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  padding: 1.5rem;
+  font-size: 2rem;
+  width: 30rem;
+  height: 4rem;
+  color: white;
+  background-color: rgb(98, 98, 230);
+}
+
+.courses{
+  max-height: 100vh;
+  width: 100rem;
+  padding-top: 3rem;
+  overflow-y: scroll;
+}
+
+.course{
+  width: 75rem;
+  height: 8rem;
+  background-color: #202020;
+  color: white;
+  border-radius: 1rem;
+  border: 1px solid rgb(61, 61, 61);
+  margin: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem;
+}
+
+.view-btn{
+  border-radius: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  width: 8rem;
+  background-color: rgb(98, 98, 230);
+  color: white;
+  text-align: center;
+  outline: none;
+  font-size: 1rem;
+  text-decoration: none;
 }
