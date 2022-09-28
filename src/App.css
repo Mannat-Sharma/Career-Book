@@ -232,7 +232,7 @@ input, button{
 .home-content{
   color: white;
   width: 25rem;
-  margin-bottom: 12rem;
+  margin-bottom: 1rem;
 }
 
 .home-content h1{
@@ -243,16 +243,19 @@ input, button{
   font-size: 1.5rem;
   font-weight: 100;
 }
-.home button{
+.home-content a{
   display: flex;
   justify-content:center ;
   align-items: center;
   padding: 1.5rem;
   font-size: 2rem;
-  width: 30rem;
-  height: 4rem;
+  width: 20rem;
+  height: 1.5rem;
   color: white;
   background-color: rgb(98, 98, 230);
+  border-radius: 1.5rem;
+  text-decoration: none;
+  margin-top: 5rem;
 }
 
 .courses{
