@@ -108,6 +108,7 @@ input, button{
   /* background-image: url("https://www.onlinecoursereport.com/wp-content/uploads/2020/07/shutterstock_394793860-1536x1177.jpg"); */
 }
 
+
 .faqs img{
   margin: 1rem;
   height: 20rem;
@@ -139,7 +140,7 @@ input, button{
 }
 
 .accordion-item{
-  width: 90%;
+  width: 70rem;
   background-color: #232323;
   border-radius: .4rem;
   margin-bottom: 1rem;

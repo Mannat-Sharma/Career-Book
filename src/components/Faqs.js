@@ -1,7 +1,7 @@
 import React from "react"
 export default function Faqs(){
     return(
-        <section>
+        <section className="faqs">
             <h1 className="faq-header">Frequently Asked Questions</h1>
             <div className="faqs-container">
                 <div className="accordion">
@@ -13,40 +13,40 @@ export default function Faqs(){
 
                         </a>
                         <div className="answer">
-                        <p>lorem ipsum</p>
+                        <p>CareerBook is an initiative for providing the resources available online on a single place.</p>
                         </div>
                     </div>
                     <div className="accordion-item" id = "question2">
                         <a className="accordion-link" href="#question2">
-                            How Career Path works?
+                            How CareerBook works?
                             <i className="icon ion-md-add"></i>
                             <i className="icon ion-md-remove"></i>
 
                         </a>
                         <div className="answer">
-                        <p>lorem ipsum</p>
+                        <p> CareerBook has all the resources available from roadmaps to courses at a single place. You just have to browse through :)</p>
                         </div>
                     </div>
                     <div className="accordion-item" id = "question3">
                         <a className="accordion-link" href="#question3">
-                            What makes careerbook the best choice?
+                            What makes CareerBook the best choice?
                             <i className="icon ion-md-add"></i>
                             <i className="icon ion-md-remove"></i>
 
                         </a>
                         <div className="answer">
-                            <p>quality content,easy navigability and sequential level wise development are three important ingredients of Careerbook's learning programmes.</p>
+                            <p>Quality content,easy navigability and sequential level wise development are three important ingredients of Careerbook's learning programmes.</p>
                         </div>
                     </div>
                     <div className="accordion-item" id = "question4">
                         <a className="accordion-link" href="#question4">
-                        How much does an careerbook course cost?
+                            Does CareerBook charges anything?
                             <i className="icon ion-md-add"></i>
                             <i className="icon ion-md-remove"></i>
 
                         </a>
                         <div className="answer">
-                        <p>lorem ipsum</p>
+                        <p>No, CareerBook is a non-profit initiative.</p>
                         </div>
                     </div>
                 </div>

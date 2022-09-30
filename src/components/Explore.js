@@ -3,6 +3,8 @@ export default function Explore(){
     const [clicked, setClicked] = useState(false)
     return(
         <div className="nav-explore-right">
+             <h3 style={{color:"gray",}}>R O A D M A P S</h3>
+
              <div className="trending">
               <a className="trend " href="https://www.youtube.com/watch?v=Vq-bgH0yq6Y" style={{backgroundImage : "url('https://www.onlinecoursereport.com/wp-content/uploads/2020/07/shutterstock_394793860-1536x1177.jpg')"}}></a>
               <a className="trend" href="https://www.youtube.com/watch?v=V0PBH5Fe4tk" style={{backgroundImage: "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh2p8q4Tsf5F6TEGAa2QnbLQpsZAiV54IoLQ&usqp=CAU')"}}></a>
