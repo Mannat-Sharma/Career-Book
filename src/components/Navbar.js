@@ -2,7 +2,7 @@ export function Navbar(){
     return(
         <div className="nav-bottom">
           <div className="nav-vertical">
-            <ul class="nav flex-column">
+            <ul class="flex-column">
               <li className="nav-item">
                 <a className="nav-link active" href="/explore" >Explore</a>
               </li>

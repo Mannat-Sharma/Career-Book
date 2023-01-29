@@ -8,9 +8,9 @@ import { Navbar } from './components/Navbar';
 import Faqs from './components/Faqs';
 import Home from './components/Home';
 import Ourbot from './components/Ourbot';
-import Trending from './components/Trending';
 import Courses from './components/Courses';
 import Skills from './components/Skills';
+import LoginPage from './components/LoginPage'
 
 function App() {
   return (
@@ -26,6 +26,8 @@ function App() {
               <Route path="/courses" element={<Courses/>}></Route>
               <Route path="/faqs" element={<Faqs/>}></Route>
               <Route path="/skills" element={<Skills/>}></Route>
+              <Route path="/login-signup" element={<LoginPage/>}></Route>
+
             </Routes>
           </BrowserRouter>
           </div>

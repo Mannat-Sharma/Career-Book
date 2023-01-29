@@ -4,7 +4,7 @@
   background-color: #191919;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .main{
@@ -12,19 +12,10 @@
   flex-direction: row;
 }
 
-/* .main-section{
-  max-height: 1000px;
-  max-width: 1500px;
-  overflow-y: scroll;
-} */
-/* .nav{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-} */
 .nav-vertical{
   margin-top: 5rem;
 }
+
 
 .navbar-brand{
   color: rgb(117, 117, 229);
@@ -37,6 +28,18 @@
   font-size: 2rem;
   text-decoration: none;
   margin: 0;
+}
+
+.nav-link-2{
+  color: #ECDBBA;
+  font-size: 1.2rem;
+  text-decoration: none;
+  margin: 0;
+}
+
+.navbar-nav-2{
+  display: flex;
+  justify-content: center;
 }
 ul{
   padding: 0;
@@ -51,10 +54,13 @@ li{
 .nav h1{
   display: inline-block;
 }
-/* .navbar.bg-light{
-  float: right;
-  margin: 2rem;
-} */
+
+.container-fluid{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 input, button{
   padding: 0.65rem;
   margin: 1rem;
@@ -62,6 +68,7 @@ input, button{
 }
 .d-flex{
   float: right;
+  margin: 2rem 0;
 }
 .form-control.me-2{
   outline: none;
@@ -89,6 +96,46 @@ input, button{
   padding: 1.2rem;
 }
 
+.navbar-internships ,.navbar-jobs{
+  text-decoration: none;
+  color: #ECDBBA;
+  font-size: large;
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+.dropdown-options {
+  display: none;
+  position: absolute;
+  overflow: auto;
+  background-color:#fff;
+  border-radius:5px;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+.dropdown:hover .dropdown-options {
+  display: block;
+}
+.dropdown-options a {
+  display: block;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+  padding:20px 40px;
+}
+.dropdown-options a:hover {
+  color: #0a0a23;
+  background-color: #ddd;
+  border-radius:5px;
+}
 .trending{
   display: flex;
   flex-direction: row;
@@ -133,6 +180,10 @@ input, button{
 
 }
 
+/* .navbar-top{
+  display: flex;
+  flex-direction: column;
+} */
 .faq-container{
   width: 100%;
   margin: 0 auto;
@@ -263,6 +314,7 @@ input, button{
   max-height: 100vh;
   width: 100rem;
   padding-top: 3rem;
+  padding-bottom: 105rem;
   overflow-y: scroll;
 }
 
